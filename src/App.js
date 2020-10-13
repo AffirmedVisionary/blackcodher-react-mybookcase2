@@ -13,50 +13,73 @@ const App = (props) => {
   const [books, setBooks] = useState(data);
   const [keyword, setKeyword] = useState('');
 
-  function addBook (title, id) {
-    const newBookList = books.filter(book => book.id !== id);
-    setBooks(newBookList)
-  console.log(`The Book ${title} with the id of ${id} was clicked.`);
- }
+  function addBook(title, id) {
+    const newBookList = books.filter((book) => book.id !== id);
+    setBooks(newBookList);
+    console.log(`The Book ${title} with the id of ${id} was clicked.`);
+  }
 
-async function findBooks(value) {
-  const results = await
-fetch(
-  `https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`
-).then(res => res.json());
-setBooks(results.items)
-}
+  async function findBooks(value) {
+    const results = await fetch(
+      `https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`
+    ).then((res) => res.json());
+    setBooks(results.items);
+  }
 
   return (
     <>
-    <Router>
-      <Route exact path="/" render= {() => (
-        <React.Fragment>
-          <Header />
-          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
-          <BookList books={books} addBook={addBook} />
-        <Footer />
-        </React.Fragment>
-      )} />
-            <Route exact path="/pages/About" render= {() => (
-        <React.Fragment>
-          <Header /> 
-          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} />
-          <About />
-          <Footer />
-        </React.Fragment>
-      )} />
-            <Route exact path="/bookcase" render= {() => (
-        <React.Fragment>
-          <Header />
-          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} />
-          <Footer />
-        </React.Fragment>
-      )} />
-    </Router>
+      <Router basename='blackcodher-react-mybookcase2'>
+        <Route
+          exact
+          path='/'
+          render={() => (
+            <React.Fragment>
+              <Header />
+              <Search
+                findBooks={findBooks}
+                keyword={keyword}
+                setKeyword={setKeyword}
+              />
+              <BookList books={books} addBook={addBook} />
+              <Footer />
+            </React.Fragment>
+          )}
+        />
+        <Route
+          exact
+          path='/pages/About'
+          render={() => (
+            <React.Fragment>
+              <Header />
+              <Search
+                findBooks={findBooks}
+                keyword={keyword}
+                setKeyword={setKeyword}
+              />
+              <About />
+              <Footer />
+            </React.Fragment>
+          )}
+        />
+        <Route
+          exact
+          path='/bookcase'
+          render={() => (
+            <React.Fragment>
+              <Header />
+              <Search
+                findBooks={findBooks}
+                keyword={keyword}
+                setKeyword={setKeyword}
+              />
+              <Footer />
+            </React.Fragment>
+          )}
+        />
+      </Router>
     </>
-  )
- }
+  );
+};
 
 // function App() {
 //   return (
