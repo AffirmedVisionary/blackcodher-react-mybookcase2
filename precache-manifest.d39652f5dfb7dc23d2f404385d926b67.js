@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12b170ca593ec2e3f2b4ac17004c9c01",
+    "revision": "50386803c9f549038d1597a24209b7fb",
     "url": "/blackcodher-react-mybookcase2/index.html"
   },
   {
