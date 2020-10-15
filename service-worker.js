@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/blackcodher-react-mybookcase2/precache-manifest.d39652f5dfb7dc23d2f404385d926b67.js"
+  "/blackcodher-react-mybookcase2/precache-manifest.cf3f4c5b26223b20a420a8071084f147.js"
 );
 
 self.addEventListener('message', (event) => {
