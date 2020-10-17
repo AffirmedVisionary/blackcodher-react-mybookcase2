@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/blackcodher-react-mybookcase2/static/css/main.1c91e437.chunk.css",
-    "main.js": "/blackcodher-react-mybookcase2/static/js/main.b62d80d0.chunk.js",
-    "main.js.map": "/blackcodher-react-mybookcase2/static/js/main.b62d80d0.chunk.js.map",
+    "main.css": "/blackcodher-react-mybookcase2/static/css/main.c8da48b3.chunk.css",
+    "main.js": "/blackcodher-react-mybookcase2/static/js/main.d4994fe4.chunk.js",
+    "main.js.map": "/blackcodher-react-mybookcase2/static/js/main.d4994fe4.chunk.js.map",
     "runtime-main.js": "/blackcodher-react-mybookcase2/static/js/runtime-main.01888d37.js",
     "runtime-main.js.map": "/blackcodher-react-mybookcase2/static/js/runtime-main.01888d37.js.map",
-    "static/js/2.75293372.chunk.js": "/blackcodher-react-mybookcase2/static/js/2.75293372.chunk.js",
-    "static/js/2.75293372.chunk.js.map": "/blackcodher-react-mybookcase2/static/js/2.75293372.chunk.js.map",
+    "static/js/2.7aaa230d.chunk.js": "/blackcodher-react-mybookcase2/static/js/2.7aaa230d.chunk.js",
+    "static/js/2.7aaa230d.chunk.js.map": "/blackcodher-react-mybookcase2/static/js/2.7aaa230d.chunk.js.map",
     "index.html": "/blackcodher-react-mybookcase2/index.html",
-    "precache-manifest.cf3f4c5b26223b20a420a8071084f147.js": "/blackcodher-react-mybookcase2/precache-manifest.cf3f4c5b26223b20a420a8071084f147.js",
+    "precache-manifest.c1ad0a96acbf59d3bc20aa82a167105b.js": "/blackcodher-react-mybookcase2/precache-manifest.c1ad0a96acbf59d3bc20aa82a167105b.js",
     "service-worker.js": "/blackcodher-react-mybookcase2/service-worker.js",
-    "static/css/main.1c91e437.chunk.css.map": "/blackcodher-react-mybookcase2/static/css/main.1c91e437.chunk.css.map",
-    "static/js/2.75293372.chunk.js.LICENSE.txt": "/blackcodher-react-mybookcase2/static/js/2.75293372.chunk.js.LICENSE.txt"
+    "static/css/main.c8da48b3.chunk.css.map": "/blackcodher-react-mybookcase2/static/css/main.c8da48b3.chunk.css.map",
+    "static/js/2.7aaa230d.chunk.js.LICENSE.txt": "/blackcodher-react-mybookcase2/static/js/2.7aaa230d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.01888d37.js",
-    "static/js/2.75293372.chunk.js",
-    "static/css/main.1c91e437.chunk.css",
-    "static/js/main.b62d80d0.chunk.js"
+    "static/js/2.7aaa230d.chunk.js",
+    "static/css/main.c8da48b3.chunk.css",
+    "static/js/main.d4994fe4.chunk.js"
   ]
 }
