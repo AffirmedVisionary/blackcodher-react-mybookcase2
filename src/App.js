@@ -63,17 +63,18 @@ setBooks(results.items)
 
   return (
     <>    
-    <Router basename='blackcodher-react-mybookcase2'>
+    <Router
+    //  basename='blackcodher-react-mybookcase2'
+     >
+       <Header />
       <Route exact path="/" render= {() => (
         <React.Fragment>
-           <Header />
           <Home />
           <Footer />
         </React.Fragment>
       )} />
             <Route exact path="/search" render= {() => (
         <React.Fragment>
-              <Header />
               <SearchPage />
           <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} authorKeyword={authorKeyword} setAuthorKeyword={setAuthorKeyword} subjectKeyword={subjectKeyword} setSubjectKeyword={setSubjectKeyword} titleKeyword={titleKeyword} setTitleKeyword={setTitleKeyword}/>
           <BookList books={books} addBook={addBook} />
@@ -82,16 +83,13 @@ setBooks(results.items)
       )} />
             <Route exact path="/about" render= {() => (
         <React.Fragment>
-    <Header />
           <About />
           <Footer />
         </React.Fragment>
       )} />
             <Route exact path="/bookcase" render= {() => (
         <React.Fragment>
-          <Header />
           <Bookcase />
-
           <BookList books={bookcase} removeBook={removeBook}/>
           <Footer />
         </React.Fragment>
