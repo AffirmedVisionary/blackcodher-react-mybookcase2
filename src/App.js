@@ -36,8 +36,8 @@ function addBook (title, id) {
  }
 
  useEffect(() => {
-  document.title = `${bookcase.length} books in bookcase`;
-  ReactDOM.render(`You have ${bookcase.length} books in bookcase`, document.getElementById('shelfCounterHeader'));
+  document.title = `${bookcase.length} books on your shelf`;
+  ReactDOM.render(`You have ${bookcase.length} books on your shelf`, document.getElementById('shelfCounterHeader'));
 }, [bookcase]);
 
 async function findBooks(value, authorValue, titleValue, subjectValue) {
@@ -87,7 +87,7 @@ setBooks(results.items)
           <Footer />
         </React.Fragment>
       )} />
-            <Route exact path="/bookcase" render= {() => (
+            <Route exact path="/shelf" render= {() => (
         <React.Fragment>
           <Bookcase />
           <BookList books={bookcase} removeBook={removeBook}/>

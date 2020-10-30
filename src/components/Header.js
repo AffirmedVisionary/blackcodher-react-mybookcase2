@@ -21,12 +21,16 @@ function Header() {
                     <Link to="/search" className="nav-link">Search</Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Link to="/bookcase" className="nav-link">Bookcase</Link>
+                    <Link to="/shelf" className="nav-link">Shelf</Link>
                 </Nav.Item>
             </Nav>
             </Navbar.Collapse>
             <Nav>
-            <Nav.Item><div id="shelfCounterHeader"></div></Nav.Item>
+            <Nav.Item>
+                <Link to="/shelf" className="nav-link">
+                    <div id="shelfCounterHeader"></div>
+                </Link>
+            </Nav.Item>
             </Nav>
         </Navbar>
 
