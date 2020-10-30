@@ -37,7 +37,7 @@ function addBook (title, id) {
 
  useEffect(() => {
   document.title = `${bookcase.length} books in bookcase`;
-  ReactDOM.render(`You have ${bookcase.length} books in bookcase`, document.getElementById('shelf'));
+  ReactDOM.render(`You have ${bookcase.length} books in bookcase`, document.getElementById('shelfCounterHeader'));
 }, [bookcase]);
 
 async function findBooks(value, authorValue, titleValue, subjectValue) {

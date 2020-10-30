@@ -41,7 +41,7 @@ hr:before {
 }
 
 /* Header */
-#shelf, #navTitle {
+#shelfCounterHeader, #navTitle {
     color: #ffcc66;
 }
 

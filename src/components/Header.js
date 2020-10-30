@@ -17,7 +17,7 @@ function Header() {
             </Nav>
             </Navbar.Collapse>
             <Nav>
-            <Nav.Item><div id="shelf"></div></Nav.Item>
+            <Nav.Item><div id="shelfCounterHeader"></div></Nav.Item>
             </Nav>
         </Navbar>
 
