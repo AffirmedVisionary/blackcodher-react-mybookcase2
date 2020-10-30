@@ -2,7 +2,6 @@ import React, { Fragment }from 'react';
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import Container from 'react-bootstrap/Container'
 import '../App.css'
 
 const Search = (props) => {
@@ -19,12 +18,6 @@ function handleSubmit(event) {
 
     return (
         <Fragment>
-             <Container className="hero">
-         <div className="hero-text">
-         <h1>Search</h1>
-         <h4>Choose one of the following search options:</h4>
-         </div>
-        </Container>
             <div className="search-container">
                 <Form onSubmit={handleSubmit}>
                     <Form.Row lg="auto">

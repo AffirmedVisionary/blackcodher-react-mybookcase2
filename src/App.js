@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Search from './pages/Search';
+import Search from './components/Search';
 import BookList from './components/BookList';
 import data from './models/books.json';
 import About from './pages/About';
 import Home from './pages/Home';
+import Bookcase from './pages/Bookcase'
+import SearchPage from './pages/Search-page'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
@@ -72,6 +74,7 @@ setBooks(results.items)
             <Route exact path="/search" render= {() => (
         <React.Fragment>
               <Header />
+              <SearchPage />
           <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} authorKeyword={authorKeyword} setAuthorKeyword={setAuthorKeyword} subjectKeyword={subjectKeyword} setSubjectKeyword={setSubjectKeyword} titleKeyword={titleKeyword} setTitleKeyword={setTitleKeyword}/>
           <BookList books={books} addBook={addBook} />
           <Footer />
@@ -87,6 +90,8 @@ setBooks(results.items)
             <Route exact path="/bookcase" render= {() => (
         <React.Fragment>
           <Header />
+          <Bookcase />
+
           <BookList books={bookcase} removeBook={removeBook}/>
           <Footer />
         </React.Fragment>
