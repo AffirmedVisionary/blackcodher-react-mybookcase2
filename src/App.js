@@ -7,9 +7,9 @@ import Search from './components/Search';
 import BookList from './components/BookList';
 import data from './models/books.json';
 import About from './pages/About';
+import Container from 'react-bootstrap/Container'
 import Home from './pages/Home';
 import Bookcase from './pages/Bookcase'
-import SearchPage from './pages/Search-page'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
@@ -20,7 +20,21 @@ const App = (props) => {
   const [titleKeyword, setTitleKeyword] = useState('');
   const [bookcase, setBookcase] = useState([]);
 // console.log(titleKeyword)
-  
+
+function SearchPage() {
+  return (
+      <>
+      <Container className="hero">
+          <div className="hero-text">
+              <h1>Search</h1>
+              <h4>Choose one of the following search options:</h4>
+              <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} authorKeyword={authorKeyword} setAuthorKeyword={setAuthorKeyword} subjectKeyword={subjectKeyword} setSubjectKeyword={setSubjectKeyword} titleKeyword={titleKeyword} setTitleKeyword={setTitleKeyword}/>
+          </div>
+      </Container>
+      </>   
+      )
+  }
+
 function addBook (title, id) {
     const newBookList = books.filter(book => book.id !== id);
     const chosenBook = books.filter(book => book.id === id);
@@ -76,7 +90,6 @@ setBooks(results.items)
             <Route exact path="/search" render= {() => (
         <React.Fragment>
               <SearchPage />
-          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} authorKeyword={authorKeyword} setAuthorKeyword={setAuthorKeyword} subjectKeyword={subjectKeyword} setSubjectKeyword={setSubjectKeyword} titleKeyword={titleKeyword} setTitleKeyword={setTitleKeyword}/>
           <BookList books={books} addBook={addBook} />
           <Footer />
         </React.Fragment>

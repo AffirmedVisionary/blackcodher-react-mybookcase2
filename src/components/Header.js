@@ -7,9 +7,15 @@ import Nav from 'react-bootstrap/Nav'
 function Header() {
     return(
         <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand id="navTitle" href="/">The Bookcase</Navbar.Brand>
+            
+            <Navbar.Brand>
+                <Link to="/" id="navTitle" className="nav-brand">My Personal BookShelf</Link>
+            </Navbar.Brand>
+
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            
             <Navbar.Collapse id="responsive-navbar-nav">
+             
              <Nav className="mr-auto">
                 <Nav.Item>
                     <Link to="/" className="nav-link">Home</Link>
@@ -24,6 +30,7 @@ function Header() {
                     <Link to="/shelf" className="nav-link">Shelf</Link>
                 </Nav.Item>
             </Nav>
+
             </Navbar.Collapse>
             <Nav>
             <Nav.Item>

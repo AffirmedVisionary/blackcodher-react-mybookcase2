@@ -73,6 +73,10 @@ hr:before {
     color: white;
   }
 
+  .btnSpace {
+      margin: 1%;
+  }
+
   /* Search Component */
 .search-container {
     padding: 2% 7%;
