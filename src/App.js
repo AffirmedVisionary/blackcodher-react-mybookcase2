@@ -14,10 +14,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
   const [books, setBooks] = useState(data);
-  const [keyword, setKeyword] = useState('');
-  const [authorKeyword, setAuthorKeyword] = useState('');
-  const [subjectKeyword, setSubjectKeyword] = useState('');
-  const [titleKeyword, setTitleKeyword] = useState('');
   const [bookcase, setBookcase] = useState([]);
 // console.log(titleKeyword)
 
@@ -28,7 +24,7 @@ function SearchPage() {
           <div className="hero-text">
               <h1>Search</h1>
               <h4>Choose one of the following search options:</h4>
-              <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} authorKeyword={authorKeyword} setAuthorKeyword={setAuthorKeyword} subjectKeyword={subjectKeyword} setSubjectKeyword={setSubjectKeyword} titleKeyword={titleKeyword} setTitleKeyword={setTitleKeyword}/>
+              <Search findBooks={findBooks} keyword={props.keyword} setKeyword={props.setKeyword} authorKeyword={props.authorKeyword} setAuthorKeyword={props.setAuthorKeyword} subjectKeyword={props.subjectKeyword} setSubjectKeyword={props.setSubjectKeyword} titleKeyword={props.titleKeyword} setTitleKeyword={props.setTitleKeyword}/>
           </div>
       </Container>
       </>   
