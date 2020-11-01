@@ -20,7 +20,7 @@ const Book = (props) => {
             <h2 className="bookTitle">{title}</h2>
         </Row>
         <Row className="align-items-center justify-content-md-center book">
-            <h3 className="bookAuthor">by {authors.join(", ")}</h3>
+            <h3 className="bookAuthor">by {authors}</h3>
         </Row>
         <Row className="align-items-center justify-content-md-center book">
             <Col lg="2">
