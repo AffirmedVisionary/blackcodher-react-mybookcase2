@@ -54,13 +54,13 @@ async function findBooks(value, authorValue, titleValue, subjectValue) {
   let url;
 
 	if(titleValue){
-		url = `https://www.googleapis.com/books/v1/volumes?q=${value}+intitle:${titleValue}&maxResults=40`
+		url = `https://www.googleapis.com/books/v1/volumes?q=${value}+intitle:${titleValue}&maxResults=40&orderBy=relevance`
 	} else if (authorValue) {
-		url = `https://www.googleapis.com/books/v1/volumes?q=${value}+inauthor:${authorValue}&maxResults=40`
+		url = `https://www.googleapis.com/books/v1/volumes?q=${value}+inauthor:${authorValue}&maxResults=40&orderBy=relevance`
 	} else if (subjectValue) {
-		url = `https://www.googleapis.com/books/v1/volumes?q=${value}+subject:${subjectValue}&maxResults=40`
+		url = `https://www.googleapis.com/books/v1/volumes?q=${value}+subject:${subjectValue}&maxResults=40&orderBy=relevance`
 	} else {
-		url = `https://www.googleapis.com/books/v1/volumes?q=${value}&maxResults=40`
+		url = `https://www.googleapis.com/books/v1/volumes?q=${value}&maxResults=40&orderBy=relevance`
   }
   console.log(url);
   const results = await
