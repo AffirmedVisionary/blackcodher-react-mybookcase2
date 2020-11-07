@@ -28,7 +28,7 @@ import '../App.css';
     <div className = "pagination"> 
       <Pagination
         activePage={activePage}
-        itemsCountPerPage={3}
+        itemsCountPerPage={8}
         totalItemsCount={props.books.length}
         pageRangeDisplayed={3}
         onChange={handlePageChange}/> 
