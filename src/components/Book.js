@@ -8,15 +8,26 @@ import Button from 'react-bootstrap/Button'
 
 const Book = (props) => {
 
-    let {id, volumeInfo: {title, authors, description, imageLinks:{smallThumbnail}},
+    let {id, volumeInfo: {title, authors, description, imageLinks},
         saleInfo:{listPrice}} 
         = props.book;
    
-          
-    return (
+        const noImage = "https://www.canva.com/design/DAEM1_kIyoM/tWhtP5_4HSWxkfJwLN2R6g/view?utm_content=DAEM1_kIyoM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+
+        // let chosenImage ;
+
+        
+
+        // if (imageLinks.smallThumbnail !== ""){
+        //     chosenImage = imageLinks.smallThumbnail
+        // } else if (imageLinks.thumbnail !== "") {
+        //     chosenImage = imageLinks.thumbnail
+        // } else chosenImage = noImage
+
+        return (
         <>
         <Container>
-        <Row className="align-items-center justify-content-md-center book">
+                    <Row className="align-items-center justify-content-md-center book">
             <h2 className="bookTitle">{title}</h2>
         </Row>
         <Row className="align-items-center justify-content-md-center book">
@@ -24,7 +35,7 @@ const Book = (props) => {
         </Row>
         <Row className="align-items-center justify-content-md-center book">
             <Col lg="2">
-            <img src= {smallThumbnail} alt={title}/>
+            {imageLinks ? <img src={imageLinks.smallThumbnail || imageLinks.thumbnail} alt={title}/> : <img src={noImage} alt={title} className="bookImage" />}
             </Col>
             <Col lg="8">
             <p className="bookDescription">{description}</p>
