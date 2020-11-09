@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/blackcodher-react-mybookcase2/static/css/main.c76e2deb.chunk.css",
+    "main.js": "/blackcodher-react-mybookcase2/static/js/main.c38117fd.chunk.js",
+    "main.js.map": "/blackcodher-react-mybookcase2/static/js/main.c38117fd.chunk.js.map",
+    "runtime-main.js": "/blackcodher-react-mybookcase2/static/js/runtime-main.01888d37.js",
+    "runtime-main.js.map": "/blackcodher-react-mybookcase2/static/js/runtime-main.01888d37.js.map",
+    "static/css/2.2a86faee.chunk.css": "/blackcodher-react-mybookcase2/static/css/2.2a86faee.chunk.css",
+    "static/js/2.9385b7f6.chunk.js": "/blackcodher-react-mybookcase2/static/js/2.9385b7f6.chunk.js",
+    "static/js/2.9385b7f6.chunk.js.map": "/blackcodher-react-mybookcase2/static/js/2.9385b7f6.chunk.js.map",
+    "index.html": "/blackcodher-react-mybookcase2/index.html",
+    "precache-manifest.b48f8c305ff4ef6511dd0a681fa4f5c0.js": "/blackcodher-react-mybookcase2/precache-manifest.b48f8c305ff4ef6511dd0a681fa4f5c0.js",
+    "service-worker.js": "/blackcodher-react-mybookcase2/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/blackcodher-react-mybookcase2/static/css/2.2a86faee.chunk.css.map",
+    "static/css/main.c76e2deb.chunk.css.map": "/blackcodher-react-mybookcase2/static/css/main.c76e2deb.chunk.css.map",
+    "static/js/2.9385b7f6.chunk.js.LICENSE.txt": "/blackcodher-react-mybookcase2/static/js/2.9385b7f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01888d37.js",
+    "static/css/2.2a86faee.chunk.css",
+    "static/js/2.9385b7f6.chunk.js",
+    "static/css/main.c76e2deb.chunk.css",
+    "static/js/main.c38117fd.chunk.js"
+  ]
+}
