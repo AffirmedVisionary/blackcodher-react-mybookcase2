@@ -14,7 +14,7 @@ li {
     padding-right: 4px;
 }
 
-a {
+a, .btnLink {
     text-decoration: none;
     color: #000;
     padding: 2px;

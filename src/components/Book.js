@@ -13,10 +13,7 @@ const Book = (props) => {
         = props.book;
    
         const noImage = "https://document-export.canva.com/kIyoM/DAEM1_kIyoM/2/thumbnail/QuRyMbKstM9zJ4sE9B58eg-0001-12815595450.png"
-
-        // let chosenImage ;
-
-        
+  
 // if statement tyrouts
         // if (imageLinks.smallThumbnail !== ""){
         //     chosenImage = imageLinks.smallThumbnail
